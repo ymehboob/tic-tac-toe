@@ -95,7 +95,7 @@ const TicTacToe = () => {
     const reset = () => {
       setLock(false);
       data = ["","","","","","","","",""];
-      titleRef.current.innerHTML = `<img src='${react_logo}'/> Tic Tac Toe`;
+      titleRef.current.innerHTML = `<img src='${react_logo}'/> Play X O X`;
       box_array.map((e)=>{
         e.current.innerHTML = "";
       })
@@ -105,7 +105,7 @@ const TicTacToe = () => {
     <div className="container">
       <h1 className="title" ref={titleRef}>
         <img src={react_logo} alt="React Logo"/>
-        Tic Tac Toe
+        Play X O X
       </h1>
       <div className="board">
         <div className="row1">
@@ -127,7 +127,7 @@ const TicTacToe = () => {
 
       <button className="reset" onClick={() =>{reset()}}>Reset</button>
 
-      <div>Built with React</div>
+      <div>Built with React by <a href="https://www.linkedin.com/in/yohannm/" target="_blank">Yohann</a></div>
     </div>
   )
 
