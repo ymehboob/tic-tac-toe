@@ -31,7 +31,7 @@
     background: #023047;
     font-size: 26px;
     color: #a2d2ff;
-    margin-top: 25px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 .boxes {
@@ -78,12 +78,12 @@
         background: #023047;
         font-size: 15px;
         color: #a2d2ff;
-        margin-top: 12px;
-        margin-bottom: 12px;
+        margin-top: 2px;
+        margin-bottom: 2px;
     }
 
     .board {
-        height: 500px;
+        height: 450px;
         width: 424px;
         display: flex;
         margin: auto;
