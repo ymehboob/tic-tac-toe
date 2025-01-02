@@ -196,6 +196,7 @@ const TicTacToe = () => {
       titleRef.current.innerHTML = `<img src='${react_logo}'/> Play X O X`;
       box_array.map((e)=>{
         e.current.innerHTML = "";
+        return 0;
       })
     }
 
@@ -225,7 +226,7 @@ const TicTacToe = () => {
 
       <button className="reset" onClick={() =>{reset()}}>Reset</button>
 
-      <div>Built with React by <a href="https://www.linkedin.com/in/yohannm/" target="_blank">Yohann</a></div>
+      <div>Built with React by <a href="https://www.linkedin.com/in/yohannm/" target="_blank" rel="noreferrer">Yohann</a></div>
     </div>
   )
 
