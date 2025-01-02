@@ -2,7 +2,15 @@ import React, { useRef } from 'react';
 import { useState } from 'react';
 import './TicTacToe.css';
 import circle_icon from '../Assets/circle.png';
+import circle1_icon from '../Assets/circle-1.png';
+import circle2_icon from '../Assets/circle-2.png';
+import circle3_icon from '../Assets/circle-3.png';
+import circle4_icon from '../Assets/circle-4.png';
 import cross_icon from '../Assets/cross.png';
+import cross1_icon from '../Assets/cross-1.png';
+import cross2_icon from '../Assets/cross-2.png';
+import cross3_icon from '../Assets/cross-3.png';
+import cross4_icon from '../Assets/cross-4.png';
 import react_logo from '../Assets/logo_light.svg';
 
 let data = ["","","","","","","","",""];
@@ -45,38 +53,128 @@ const TicTacToe = () => {
     const checkWin = () => {
       if (data[0]===data[1] && data[1]===data[2] && data[2]!=="") 
       {
+        if (data[2]==="O") {
+          box1.current.innerHTML = `<img src="${circle2_icon}" alt="circle icon" />`;
+          box2.current.innerHTML = `<img src="${circle2_icon}" alt="circle icon" />`;
+          box3.current.innerHTML = `<img src="${circle2_icon}" alt="circle icon" />`;
+        }
+        else if (data[2]==="X") {
+          box1.current.innerHTML = `<img src="${cross2_icon}" alt="circle icon" />`;
+          box2.current.innerHTML = `<img src="${cross2_icon}" alt="circle icon" />`;
+          box3.current.innerHTML = `<img src="${cross2_icon}" alt="circle icon" />`;
+        }
         won(data[2]);
       }
       else if (data[3]===data[4] && data[4]===data[5] && data[5]!=="") 
       {
+        if (data[5]==="O") {
+          box4.current.innerHTML = `<img src="${circle2_icon}" alt="circle icon" />`;
+          box5.current.innerHTML = `<img src="${circle2_icon}" alt="circle icon" />`;
+          box6.current.innerHTML = `<img src="${circle2_icon}" alt="circle icon" />`;
+        }
+        else if (data[5]==="X") {
+          box4.current.innerHTML = `<img src="${cross2_icon}" alt="circle icon" />`;
+          box5.current.innerHTML = `<img src="${cross2_icon}" alt="circle icon" />`;
+          box6.current.innerHTML = `<img src="${cross2_icon}" alt="circle icon" />`;
+        }
         won(data[5]);
       }
       else if (data[6]===data[7] && data[7]===data[8] && data[8]!=="") 
       {
+        if (data[8]==="O") {
+          box7.current.innerHTML = `<img src="${circle2_icon}" alt="circle icon" />`;
+          box8.current.innerHTML = `<img src="${circle2_icon}" alt="circle icon" />`;
+          box9.current.innerHTML = `<img src="${circle2_icon}" alt="circle icon" />`;
+        }
+        else if (data[8]==="X") {
+          box7.current.innerHTML = `<img src="${cross2_icon}" alt="circle icon" />`;
+          box8.current.innerHTML = `<img src="${cross2_icon}" alt="circle icon" />`;
+          box9.current.innerHTML = `<img src="${cross2_icon}" alt="circle icon" />`;
+        }
         won(data[8]);
       }
       else if (data[0]===data[3] && data[3]===data[6] && data[6]!=="") 
       {
+        if (data[6]==="O") {
+          box1.current.innerHTML = `<img src="${circle3_icon}" alt="circle icon" />`;
+          box4.current.innerHTML = `<img src="${circle3_icon}" alt="circle icon" />`;
+          box7.current.innerHTML = `<img src="${circle3_icon}" alt="circle icon" />`;
+        }
+        else if (data[6]==="X") {
+          box1.current.innerHTML = `<img src="${cross3_icon}" alt="circle icon" />`;
+          box4.current.innerHTML = `<img src="${cross3_icon}" alt="circle icon" />`;
+          box7.current.innerHTML = `<img src="${cross3_icon}" alt="circle icon" />`;
+        }
         won(data[6]);
       }
       else if (data[1]===data[4] && data[4]===data[7] && data[7]!=="") 
       {
+        if (data[7]==="O") {
+          box2.current.innerHTML = `<img src="${circle3_icon}" alt="circle icon" />`;
+          box5.current.innerHTML = `<img src="${circle3_icon}" alt="circle icon" />`;
+          box8.current.innerHTML = `<img src="${circle3_icon}" alt="circle icon" />`;
+        }
+        else if (data[7]==="X") {
+          box2.current.innerHTML = `<img src="${cross3_icon}" alt="circle icon" />`;
+          box5.current.innerHTML = `<img src="${cross3_icon}" alt="circle icon" />`;
+          box8.current.innerHTML = `<img src="${cross3_icon}" alt="circle icon" />`;
+        }
         won(data[7]);
       }
       else if (data[2]===data[5] && data[5]===data[8] && data[8]!=="") 
       {
+        if (data[8]==="O") {
+          box3.current.innerHTML = `<img src="${circle3_icon}" alt="circle icon" />`;
+          box6.current.innerHTML = `<img src="${circle3_icon}" alt="circle icon" />`;
+          box9.current.innerHTML = `<img src="${circle3_icon}" alt="circle icon" />`;
+        }
+        else if (data[8]==="X") {
+          box3.current.innerHTML = `<img src="${cross3_icon}" alt="circle icon" />`;
+          box6.current.innerHTML = `<img src="${cross3_icon}" alt="circle icon" />`;
+          box9.current.innerHTML = `<img src="${cross3_icon}" alt="circle icon" />`;
+        }
         won(data[8]);
       }
       else if (data[0]===data[4] && data[4]===data[8] && data[8]!=="") 
       {
+        if (data[8]==="O") {
+          box1.current.innerHTML = `<img src="${circle1_icon}" alt="circle icon" />`;
+          box5.current.innerHTML = `<img src="${circle1_icon}" alt="circle icon" />`;
+          box9.current.innerHTML = `<img src="${circle1_icon}" alt="circle icon" />`;
+        }
+        else if (data[8]==="X") {
+          box1.current.innerHTML = `<img src="${cross1_icon}" alt="circle icon" />`;
+          box5.current.innerHTML = `<img src="${cross1_icon}" alt="circle icon" />`;
+          box9.current.innerHTML = `<img src="${cross1_icon}" alt="circle icon" />`;
+        }
         won(data[8]);
       }
       else if (data[0]===data[1] && data[1]===data[2] && data[2]!=="") 
       {
+        if (data[2]==="O") {
+          box1.current.innerHTML = `<img src="${circle2_icon}" alt="circle icon" />`;
+          box2.current.innerHTML = `<img src="${circle2_icon}" alt="circle icon" />`;
+          box3.current.innerHTML = `<img src="${circle2_icon}" alt="circle icon" />`;
+        }
+        else if (data[2]==="X") {
+          box1.current.innerHTML = `<img src="${cross2_icon}" alt="circle icon" />`;
+          box2.current.innerHTML = `<img src="${cross2_icon}" alt="circle icon" />`;
+          box3.current.innerHTML = `<img src="${cross2_icon}" alt="circle icon" />`;
+        }
         won(data[2]);
       }
       else if (data[2]===data[4] && data[4]===data[6] && data[6]!=="") 
       {
+        if (data[6]==="O") {
+          box3.current.innerHTML = `<img src="${circle4_icon}" alt="circle icon" />`;
+          box5.current.innerHTML = `<img src="${circle4_icon}" alt="circle icon" />`;
+          box7.current.innerHTML = `<img src="${circle4_icon}" alt="circle icon" />`;
+        }
+        else if (data[6]==="X") {
+          box3.current.innerHTML = `<img src="${cross4_icon}" alt="circle icon" />`;
+          box5.current.innerHTML = `<img src="${cross4_icon}" alt="circle icon" />`;
+          box7.current.innerHTML = `<img src="${cross4_icon}" alt="circle icon" />`;
+        }
         won(data[6]);
       }
 
